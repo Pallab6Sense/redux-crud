@@ -2,7 +2,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import DeleteUser from './DeleteUser';
 import { useState } from 'react';
 import UpdateUser from './UpdateUser';
-
+interface userType{
+  id:string
+  name: string,
+  username: string
+}
 function DisplayUsers() {
   const userList = useSelector((state: any) => state.users.value);
   const dispatch = useDispatch();
@@ -10,7 +14,7 @@ function DisplayUsers() {
   const [newUserName, setNewUserName] = useState('');
   return (
     <div>
-      {userList.map((user: any) => {
+      {userList.map((user: userType) => {
         return (
           <div className="user-div" key={user.id}>
             <h1>Name:{user.name}</h1>

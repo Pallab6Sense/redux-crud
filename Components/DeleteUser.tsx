@@ -1,6 +1,10 @@
 import { Button } from 'antd';
 import { deleteUser } from '@/Redux/Users';
-function DeleteUser(props: any) {
+interface propsType{
+  dispatch:any,
+  id:string
+}
+function DeleteUser(props: propsType) {
   return (
     <Button
       type="primary"

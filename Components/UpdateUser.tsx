@@ -1,8 +1,13 @@
 import { Button, Input } from 'antd';
 import React from 'react';
 import { updateUser } from '@/Redux/Users';
-
-function UpdateUser(props: any) {
+interface propsType{
+    id: string,
+    newUserName: string,
+    dispatch:any,
+    setNewUserName:(newUserName:string)=>void
+}
+function UpdateUser(props: propsType) {
   return (
     <>
       <Input
