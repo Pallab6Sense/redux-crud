@@ -33,6 +33,10 @@ body {
   padding-bottom: 20px;
 }
 
+.adduser-btn{
+  display: flex;
+  justify-content: center;
+}
 .display-user{
   display: flex;
   padding-top: 20px;
@@ -47,4 +51,32 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.delete-btn{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.update-btn{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media(max-width:600px) {
+  .container{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .add-user{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    /* width: 200px; */
+  }
 }
