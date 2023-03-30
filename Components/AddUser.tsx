@@ -14,7 +14,6 @@ export default function AddUser() {
         <Input
           placeholder="Add Name...."
           type="text"
-          size="large"
           onChange={(event: any) => {
             setName(event.target.value);
           }}
@@ -24,7 +23,6 @@ export default function AddUser() {
         <Input
           placeholder="Add UserName...."
           type="text"
-          size="large"
           onChange={(event: any) => {
             setUserName(event.target.value);
           }}
